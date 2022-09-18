@@ -3,6 +3,10 @@ import { useRecoilState } from 'recoil';
 import { favouritesState } from 'shared/state';
 import { Game } from '@shared/types';
 
+/* 
+Code Snippet taken from https://tailwindui.com/components/ecommerce/components/product-lists and modified
+*/
+
 export const GameItem = ({ inputGame }: { inputGame: Game }) => {
   const [favouriteGames, setFavouriteGame] = useRecoilState(favouritesState);
 

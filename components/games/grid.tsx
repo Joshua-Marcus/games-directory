@@ -2,6 +2,10 @@ import { useQuery, gql } from '@apollo/client';
 import { Loader, GameItem } from '@components';
 import { Game } from 'shared/types';
 
+/* 
+Code Snippet taken from https://tailwindui.com/components/ecommerce/components/product-lists and modified
+*/
+
 const GAMES_QUERY = gql`
   query GetAllGames {
     gamesCollection {

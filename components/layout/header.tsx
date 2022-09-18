@@ -3,9 +3,9 @@ import { useRecoilValue } from 'recoil';
 import { favouritesState } from '@shared/state';
 import Link from 'next/link';
 
-//Code Snippit take from https://tailwindui.com/components/ecommerce/page-examples/storefront-pages
-// modified to suit
-
+/* 
+Code Snippet taken from https://tailwindui.com/components/ecommerce/page-examples/storefront-pages and modified
+*/
 export const Header = () => {
   const favouriteGames = useRecoilValue(favouritesState);
   return (
