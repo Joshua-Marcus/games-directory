@@ -1,10 +1,14 @@
 import type { NextPage } from 'next';
-import Countries from '../shared/components/games';
-import { ShoppingBagIcon } from '@heroicons/react/24/outline';
-import Image from 'next/image';
+import { GamesGrid } from 'components';
+import FavouriteGames from './favourites';
 
 const Home: NextPage = () => {
-  return <p>Hello</p>;
+  return (
+    <div className='mx-auto max-w-2xl py-8 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8'>
+      <FavouriteGames />
+      <GamesGrid />
+    </div>
+  );
 };
 
 export default Home;

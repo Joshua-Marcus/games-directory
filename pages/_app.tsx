@@ -1,14 +1,17 @@
 import type { AppProps } from 'next/app';
 import { ApolloProvider } from '@apollo/client';
-import client from '../shared/lib/apollo';
+import client from 'lib/apollo';
+import { Header } from 'components';
+import { RecoilRoot } from 'recoil';
 import '@styles/theme.scss';
-import { Header } from '@shared/components';
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <ApolloProvider client={client}>
-      <Header />
-      <Component {...pageProps} />
+      <RecoilRoot>
+        <Header />
+        <Component {...pageProps} />
+      </RecoilRoot>
     </ApolloProvider>
   );
 }
