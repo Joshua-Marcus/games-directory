@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { useRecoilValue } from 'recoil';
-import { favouritesState } from 'state/favourites.state';
+import { favouritesState } from '@state';
 
 const FavouriteGames: NextPage = () => {
   const favouriteGames = useRecoilValue(favouritesState);

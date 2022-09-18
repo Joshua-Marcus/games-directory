@@ -3,7 +3,7 @@ import { ApolloProvider } from '@apollo/client';
 import client from 'lib/apollo';
 import { Header } from 'components';
 import { RecoilRoot } from 'recoil';
-import '@styles/theme.scss';
+import '../styles/theme.scss';
 
 function App({ Component, pageProps }: AppProps) {
   return (

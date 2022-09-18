@@ -1,53 +1,49 @@
 import { HeartIcon } from '@heroicons/react/24/outline';
 import { useRecoilState } from 'recoil';
-import { favouritesState } from 'state/favourites.state';
+import { favouritesState } from '@state';
+import { Game } from '@types';
 
-export const GameItem = ({ game }: any) => {
+export const GameItem = ({ inputGame }: { inputGame: Game }) => {
   const [favouriteGames, setFavouriteGame] = useRecoilState(favouritesState);
 
   const currentGameIndex = favouriteGames.findIndex(
-    (favouriteGame) => favouriteGame.id === game.id
+    (favouriteGame) => favouriteGame.id === inputGame.id
   );
-  const toggleFavouriteGame: any = () => {
-    setFavouriteGame((oldTodoList: any) => {
-      if (favouriteGames.some((games: any) => games.id === game.id)) {
-        const updatedRemovedList = removeItemAtIndex(
+
+  const toggleFavouriteGame = () => {
+    setFavouriteGame((oldTodoList: Game[]) => {
+      if (
+        favouriteGames.some(
+          (favouriteGame: Game) => favouriteGame.id === inputGame.id
+        )
+      ) {
+        const removeGame = removeItemAtIndex<Game>(
           favouriteGames,
           currentGameIndex
         );
-        return updatedRemovedList;
+        return removeGame;
       } else {
-        return [
-          ...oldTodoList,
-          {
-            id: game.id,
-            name: game.name,
-            image_url: game.image_url,
-          },
-        ];
+        return [...oldTodoList, inputGame];
       }
     });
   };
 
   return (
-    <div
-      key={game.id}
-      className='group flex flex-col overflow-hidden rounded-lg border border-gray-200 cursor-pointer'
-    >
+    <div className='group flex flex-col overflow-hidden rounded-lg border border-gray-200 cursor-pointer'>
       <div className='bg-gray-200 group-hover:opacity-75 sm:h-80'>
         <img
-          src={game.image_url}
-          alt={game.image_url}
+          src={inputGame.image_url}
+          alt={inputGame.image_url}
           className='h-full w-full object-cover object-center sm:h-full sm:w-full'
         />
       </div>
       <div className='flex flex-1 flex-col space-y-1 p-2.5'>
         <div className='flex flex-row justify-between'>
           <h3 className='text-sm font-medium text-gray-900'>
-            <p>{game.name}</p>
+            <p>{inputGame.name}</p>
           </h3>
           {favouriteGames.some(
-            (favouriteGames) => favouriteGames.id === game.id
+            (favouriteGames) => favouriteGames.id === inputGame.id
           ) ? (
             <HeartIcon
               onClick={toggleFavouriteGame}
@@ -65,6 +61,6 @@ export const GameItem = ({ game }: any) => {
   );
 };
 
-function removeItemAtIndex(arr: any[], index: any) {
+function removeItemAtIndex<T>(arr: T[], index: number) {
   return [...arr.slice(0, index), ...arr.slice(index + 1)];
 }

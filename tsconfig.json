@@ -16,9 +16,10 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@shared/components": ["components"],
-      "@shared/lib/*": ["lib/*"],
-      "@shared/state": ["state"],
+      "@components": ["components"],
+      "@lib/*": ["lib/*"],
+      "@state": ["state"],
+      "@types": ["types"],
       "@styles/*": ["styles/*"]
     }
   },
