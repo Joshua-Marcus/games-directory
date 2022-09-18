@@ -32,3 +32,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+// // ./apollo-client.ts
+
+// import { ApolloClient, InMemoryCache } from '@apollo/client';
+
+// const client = new ApolloClient({
+// uri: 'https://hmyirywbqmyterlckxpw.supabase.co/graphql/v1',
+// cache: new InMemoryCache(),
+// headers: {
+// apiKey:
+// 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhteWlyeXdicW15dGVybGNreHB3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjMzNDQ5MTIsImV4cCI6MTk3ODkyMDkxMn0.Tvr-7bV2PIXbPfXEwxgweUHv8PzoMLIZIBd3d-n15tk',
+// },
+// });
+
+// export default client;
