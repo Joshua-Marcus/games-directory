@@ -17,9 +17,9 @@
     "baseUrl": ".",
     "paths": {
       "@components": ["components"],
-      "@lib/*": ["lib/*"],
-      "@state": ["state"],
-      "@types": ["types"],
+      "@shared/lib/*": ["shared/lib/*"],
+      "@shared/state": ["shared/state"],
+      "@shared/types": ["shared/types"],
       "@styles/*": ["styles/*"]
     }
   },

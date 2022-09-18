@@ -1,6 +1,6 @@
 import { HeartIcon } from '@heroicons/react/24/outline';
 import { useRecoilValue } from 'recoil';
-import { favouritesState } from '@state';
+import { favouritesState } from '@shared/state';
 import Link from 'next/link';
 
 //Code Snippit take from https://tailwindui.com/components/ecommerce/page-examples/storefront-pages

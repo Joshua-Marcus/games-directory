@@ -1,7 +1,6 @@
 import { useQuery, gql } from '@apollo/client';
-import { Loader } from 'components';
-import { GameItem } from './item';
-import { Game } from '@types';
+import { Loader, GameItem } from '@components';
+import { Game } from 'shared/types';
 
 const GAMES_QUERY = gql`
   query GetAllGames {

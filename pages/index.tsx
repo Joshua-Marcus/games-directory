@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import { GamesGrid } from '@components';
-import FavouriteGames from './favourites';
 
 const Home: NextPage = () => {
   return (

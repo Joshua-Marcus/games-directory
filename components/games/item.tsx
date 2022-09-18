@@ -1,7 +1,7 @@
 import { HeartIcon } from '@heroicons/react/24/outline';
 import { useRecoilState } from 'recoil';
-import { favouritesState } from '@state';
-import { Game } from '@types';
+import { favouritesState } from 'shared/state';
+import { Game } from '@shared/types';
 
 export const GameItem = ({ inputGame }: { inputGame: Game }) => {
   const [favouriteGames, setFavouriteGame] = useRecoilState(favouritesState);
