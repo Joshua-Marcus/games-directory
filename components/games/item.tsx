@@ -30,7 +30,7 @@ export const GameItem = ({ inputGame }: { inputGame: Game }) => {
 
   return (
     <div className='group flex flex-col overflow-hidden rounded-lg border border-gray-200 cursor-pointer'>
-      <div className='bg-gray-200 group-hover:opacity-75 sm:h-80'>
+      <div className='bg-gray-200 group-hover:opacity-75 h-80'>
         <img
           src={inputGame.image_url}
           alt={inputGame.image_url}
