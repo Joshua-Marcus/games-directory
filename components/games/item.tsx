@@ -1,7 +1,6 @@
 import { HeartIcon } from '@heroicons/react/24/outline';
 import { useRecoilState } from 'recoil';
 import { favouritesState } from 'state/favourites.state';
-import { removeItemAtIndex } from 'utils/removeFromArray';
 
 export const GameItem = ({ game }: any) => {
   const [favouriteGames, setFavouriteGame] = useRecoilState(favouritesState);
@@ -65,3 +64,7 @@ export const GameItem = ({ game }: any) => {
     </div>
   );
 };
+
+function removeItemAtIndex(arr: any[], index: any) {
+  return [...arr.slice(0, index), ...arr.slice(index + 1)];
+}
