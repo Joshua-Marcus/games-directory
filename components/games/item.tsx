@@ -47,6 +47,7 @@ export const GameItem = ({ inputGame }: { inputGame: Game }) => {
           ) ? (
             <HeartIcon
               onClick={toggleFavouriteGame}
+              data-testid='add_to_favourites_btn'
               className='h-6 w-6 flex-shrink-0 text-red-500 fill-red-500'
             />
           ) : (
