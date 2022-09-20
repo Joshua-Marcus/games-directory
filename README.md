@@ -24,6 +24,10 @@ requirements:
 
 ## Running Locally
 
-Run `yarn` to install required dependencies and `yarn dev` to start local server.
+Run `yarn` to install dependencies 
+
+Create a `.env` file and add your superbase url and anon public key as `NEXT_PUBLIC_SUPABASE_URL` & `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+Finally, run `yarn dev` to start the local server.
 
 Application will be served to `localhost:3000`
