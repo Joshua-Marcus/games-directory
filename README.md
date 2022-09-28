@@ -1,10 +1,8 @@
-# Next Marketplace (GamesApp)
+# Video Game Directory App (GamesApp)
 
-### Requirements
+Simple application that display a directory/list of games with an option to add games to a favourites list. Built using Next.js and Supabase
 
-Your task is to build a simple marketplace app with both list and favourites view. The
-implementation should be written in Typescript using React and meet the following
-requirements:
+# Feature Roadmap
 
 | **Feature**                                                                   | **Status** |
 | ----------------------------------------------------------------------------- | ---------- |
@@ -24,9 +22,9 @@ requirements:
 
 ## Running Locally
 
-Run `yarn` to install dependencies 
+Run `yarn` to install dependencies
 
-Create a `.env` file and add your superbase url and anon public key as `NEXT_PUBLIC_SUPABASE_URL` & `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+Create a `.env` file and add your supabase url and anon public key as `NEXT_PUBLIC_SUPABASE_URL` & `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 
 Finally, run `yarn dev` to start the local server.
 
