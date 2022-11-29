@@ -6,9 +6,9 @@ Simple application that display a directory/list of games with an option to add 
 
 | **Feature**                                                                   | **Status** |
 | ----------------------------------------------------------------------------- | ---------- |
-| List a collection of items of your choosing                                   | X          |
-| Allow users to add and remove items to a personal 'favourites list'.          | X          |
-| Provide a view of the user's selected favourite items in the favourites list. | X          |
+| List a collection of items of your choosing                                   | ✓          |
+| Allow users to add and remove items to a personal 'favourites list'.          | ✓          |
+| Provide a view of the user's selected favourite items in the favourites list. | ✓          |
 
 ## Technology
 
