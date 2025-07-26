@@ -24,7 +24,7 @@ Simple application that display a directory/list of games with an option to add 
 
 Run `yarn` to install dependencies
 
-Create a `.env` file and add your supabase url and anon public key as `NEXT_PUBLIC_SUPABASE_URL` & `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+Create a `.env` file and add your supabase url and anon key as `NEXT_PUBLIC_SUPABASE_URL` & `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 
 Finally, run `yarn dev` to start the local server.
 
